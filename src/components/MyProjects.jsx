@@ -53,9 +53,9 @@ const Projects = () => {
                                 <p className={`text-gray-300 text-justify`}>
                                     {project.info}
                                 </p>
-                                <button className="mt-4 bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition">
-                                    View Project →
-                                </button>
+                                <a href={`${project.githubLink}`} target='_blank'> <button className="mt-4 bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition">
+									 View Project →
+								</button></a>
                             </div>
 
                             {/* Tech Stack */}

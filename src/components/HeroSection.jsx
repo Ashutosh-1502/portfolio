@@ -56,7 +56,7 @@ const HeroSection = () => {
 
 					{/* Social Media Links */}
 					<a
-						href="https://linkedin.com"
+						href="https://www.linkedin.com/in/ashutosh-suryavanshi-1488a8244"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="w-10 h-10 flex items-center justify-center text-blue-200 rounded-full hover:bg-blue-500 bg-[#1E2A47]"
@@ -65,7 +65,7 @@ const HeroSection = () => {
 					</a>
 
 					<a
-						href="https://github.com"
+						href="https://github.com/Ashutosh-1502"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="w-10 h-10 flex items-center justify-center text-gray-200 rounded-full hover:bg-gray-600 bg-[#1E2A47]"

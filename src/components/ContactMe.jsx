@@ -1,11 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 import contact_me from '../assets/contact.avif';
 import {motion} from 'framer-motion';
 import {fadeIn} from "../varients.js";
+import {Toaster, toast} from "react-hot-toast";
 
 const ContactForm = () => {
+
+	const [name, setName] = useState('');
+	const [subject, setSubject] = useState('');
+	const [message, setMessage] = useState('');
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		if(name.length < 4)
+			return toast.error('Name should be at least 4 character long');
+		if(subject.length < 15)
+			return toast.error('Subject should be at least 15 character long');
+		if(message.length < 70)
+			return toast.error('Message should be at least 70 character long');
+
+		toast.success('Thank you. We will get back to you')
+		setName('');
+		setMessage('');
+		setSubject('');
+	}
+
     return (
         <div className="bg-[#0A192F] flex justify-center items-center min-h-screen px-4 py-10" id="contact-me">
+			<Toaster/>
             <motion.div
 				variants={fadeIn('up', 0.2)}
 				initial='hidden'
@@ -48,10 +70,10 @@ const ContactForm = () => {
 
                     {/* Social Icons */}
                     <div className="flex space-x-4 mt-6">
-                        <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1E2A47] hover:bg-blue-500 transition">
+                        <a href="https://github.com/Ashutosh-1502" target='_blank' className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1E2A47] hover:bg-blue-500 transition">
                             <i className="fi fi-brands-github"></i>
                         </a>
-                        <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1E2A47] hover:bg-blue-700 transition">
+                        <a href="https://www.linkedin.com/in/ashutosh-suryavanshi-1488a8244" target='_blank' className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1E2A47] hover:bg-blue-700 transition">
                             <i className="fi fi-brands-linkedin"></i>
                         </a>
                     </div>
@@ -68,12 +90,14 @@ const ContactForm = () => {
 
 
                     {/* Form */}
-                    <form className="mt-6">
+                    <form className="mt-6" onSubmit={handleSubmit}>
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                             <div>
                                 <label className="text-gray-300 text-sm">Your Name</label>
                                 <input
                                     type="text"
+									value={name}
+									onChange={(e) => setName(e.target.value)}
                                     placeholder="Name *"
                                     className="w-full mt-1 px-4 py-2 rounded-md bg-[#1E2A47] border border-gray-600 focus:outline-none focus:border-blue-400"
                                 />
@@ -84,6 +108,8 @@ const ContactForm = () => {
                             <label className="text-gray-300 text-sm">Subject</label>
                             <input
                                 type="text"
+								value={subject}
+								onChange={(e) => setSubject(e.target.value)}
                                 placeholder="Subject *"
                                 className="w-full mt-1 px-4 py-2 rounded-md bg-[#1E2A47] border border-gray-600 focus:outline-none focus:border-blue-400"
                             />
@@ -93,13 +119,16 @@ const ContactForm = () => {
                             <label className="text-gray-300 text-sm">Your Message</label>
                             <textarea
                                 placeholder="Your message *"
+								value={message}
+								onChange={(e) => setMessage(e.target.value)}
                                 rows="4"
                                 className="w-full mt-1 px-4 py-2 rounded-md bg-[#1E2A47] border border-gray-600 focus:outline-none focus:border-blue-400"
                             ></textarea>
                         </div>
 
                         {/* Submit Button */}
-                        <button className="w-full mt-6 bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold py-3 rounded-md transition">
+                        <button
+							className="w-full mt-6 bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold py-3 rounded-md transition">
                             SEND MESSAGE
                         </button>
                     </form>

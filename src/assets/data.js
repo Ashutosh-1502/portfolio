@@ -45,7 +45,8 @@ const projectDetails = [
 		name: "BLOGGING WEBSITE",
 		info: "A blogging platform built with MongoDB, Node, Express, React, and Tailwind, enabling users to sign up via Google or email. Users can explore blogs across various topics, comment, like, and reply on posts, as well as write and manage their own blogs with a modern text editor. Notifications are sent for new blogs and comment interactions, enhancing user engagement.",
 		tech: ['React', 'Tailwind', 'Node', 'Express', 'MongoDB'],
-		bgImage: blog_banner
+		bgImage: blog_banner,
+		githubLink: 'https://github.com/Ashutosh-1502/blog-web-app.git'
 	},
 	// {
 	// 	name: "DOCTOR APPOINTMENT BOOKING SYSTEM",
@@ -57,7 +58,8 @@ const projectDetails = [
 		name: 'NOTE TAKING WEBSITE',
 		info: "Note Taking website has built with features like creating, updating, deleting, and managing notes. The website is developed using Bootstrap, Node, Express, EJS, and MongoDB. It also includes sign-up and sign-in functionality via email/password or Google, enabling users to securely access and manage their notes.",
 		tech: ['Bootstrap', 'Node', 'Express', 'EJS', 'MongoDB'],
-		bgImage: note_banner
+		bgImage: note_banner,
+		githubLink: 'https://github.com/Ashutosh-1502/Note-taking-app.git'
 	}
 ];
 

@@ -34,7 +34,7 @@ const education = [
 	},
 	{
 		year: "2022-2026 (Pursuing)",
-		title: "Bachalors of Technology (CSE)",
+		title: "Bachelors of Technology (CSE)",
 		institute: "Dr. APJ Abdual Kalam Technical University",
 		icon: 'https://cdn-icons-png.flaticon.com/128/3135/3135768.png',
 	}
@@ -47,12 +47,12 @@ const projectDetails = [
 		tech: ['React', 'Tailwind', 'Node', 'Express', 'MongoDB'],
 		bgImage: blog_banner
 	},
-	{
-		name: "DOCTOR APPOINTMENT BOOKING SYSTEM",
-		info: "A doctor appointment booking system built with React, Tailwind, Node, Express, and MongoDB. Patients can book, manage appointments, and verify via phone or email. Stripe handles payments. Admins manage doctors, patients, and promotions, while a super admin can promote users via email invites. Doctors track earnings, manage appointments, and view details through dedicated panels.",
-		tech: ['React', 'Tailwind', 'Node', 'Express', 'MongoDB'],
-		bgImage: doc_banner
-	},
+	// {
+	// 	name: "DOCTOR APPOINTMENT BOOKING SYSTEM",
+	// 	info: "A doctor appointment booking system built with React, Tailwind, Node, Express, and MongoDB. Patients can book, manage appointments, and verify via phone or email. Stripe handles payments. Admins manage doctors, patients, and promotions, while a super admin can promote users via email invites. Doctors track earnings, manage appointments, and view details through dedicated panels.",
+	// 	tech: ['React', 'Tailwind', 'Node', 'Express', 'MongoDB'],
+	// 	bgImage: doc_banner
+	// },
 	{
 		name: 'NOTE TAKING WEBSITE',
 		info: "Note Taking website has built with features like creating, updating, deleting, and managing notes. The website is developed using Bootstrap, Node, Express, EJS, and MongoDB. It also includes sign-up and sign-in functionality via email/password or Google, enabling users to securely access and manage their notes.",

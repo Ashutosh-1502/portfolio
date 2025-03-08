@@ -34,7 +34,7 @@ const HeroSection = () => {
 						sequence={[
 							'',
 							1000,
-							"I'M A WEB DEVELOPER",
+							"I'M A WEB AND MOBILE APPLICATION DEVELOPER",
 							1000,
 						]}
 						speed={50}
@@ -42,7 +42,7 @@ const HeroSection = () => {
 					/>
 				</h2>
 				<p className="text-gray-300 mt-4 text-lg">
-					I am a highly motivated and detail-oriented web developer, eager to apply my skills in front-end and
+					I am a highly motivated and detail-oriented web developer and mobile developer, eager to apply my skills in front-end and
 					back-end development as a fresher..
 				</p>
 

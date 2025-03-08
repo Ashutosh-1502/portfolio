@@ -23,7 +23,7 @@ const AboutSection = () => {
                         <span className="text-blue-500">WEB DEVELOPMENT</span> INTERNSHIPS
                     </h1>
                     <p className="text-gray-300 mt-4 text-lg text-justify">
-                    I am available for web development internship opportunities, with a focus on both front-end and back-end technologies. As a fresher, I am eager to apply my skills in HTML, CSS, JavaScript, React, Node.js, MongoDB, and Express to contribute to dynamic websites and robust server-side applications, while gaining hands-on experience in the field.
+                    I am available for web and mobile development internship opportunities, focusing on both front-end and back-end technologies. As a fresher, I am eager to apply my skills in HTML, CSS, JavaScript, React, React Native, Node.js, MongoDB, and Express to build dynamic websites, robust server-side applications, and mobile apps while gaining hands-on experience in the field.
                     </p>
 
 

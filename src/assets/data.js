@@ -1,6 +1,6 @@
 import blog_banner from "./blog_banner.jpg";
-import doc_banner from "./doc_banner.jpg";
 import note_banner from "./note_banner.jpeg";
+import job_banner from './job_banner.jpg';
 
 const navSection = [
 	{ id: "home", title: "Home", link: "#home" },
@@ -11,11 +11,13 @@ const navSection = [
 ];
 
 const skills = [
-	{ name: "JavaScript", level: "70%" },
+	{ name: "Javascript", level: "70%" },
+	{ name: 'Typescript', level: '60%' },
 	{ name: "Tailwind CSS", level: "75%" },
-	{ name: "React.js", level: "75%" },
+	{ name: "React", level: "75%" },
+	{ name: "React Native", level: '75%' },
 	{ name: "Node.js", level: "50%" },
-	{ name: "Express.js", level: "70%" },
+	{ name: "Express", level: "70%" },
 	{ name: "MongoDB", level: "78%" },
 ];
 
@@ -48,12 +50,12 @@ const projectDetails = [
 		bgImage: blog_banner,
 		githubLink: 'https://github.com/Ashutosh-1502/blog-web-app.git'
 	},
-	// {
-	// 	name: "DOCTOR APPOINTMENT BOOKING SYSTEM",
-	// 	info: "A doctor appointment booking system built with React, Tailwind, Node, Express, and MongoDB. Patients can book, manage appointments, and verify via phone or email. Stripe handles payments. Admins manage doctors, patients, and promotions, while a super admin can promote users via email invites. Doctors track earnings, manage appointments, and view details through dedicated panels.",
-	// 	tech: ['React', 'Tailwind', 'Node', 'Express', 'MongoDB'],
-	// 	bgImage: doc_banner
-	// },
+	{
+		name: "JOB FINDER",
+		info: "A React Native job search app lets users browse and apply for jobs across various domains. With secure Google authentication, users get a personalized experience. The app fetches job listings from the JSearch API, aggregating jobs from platforms like LinkedIn and Internshala. Users can view job details and apply directly via links to company websites.",
+		tech: ['React Native', 'JSearch API'],
+		bgImage: job_banner
+	},
 	{
 		name: 'NOTE TAKING WEBSITE',
 		info: "Note Taking website has built with features like creating, updating, deleting, and managing notes. The website is developed using Bootstrap, Node, Express, EJS, and MongoDB. It also includes sign-up and sign-in functionality via email/password or Google, enabling users to securely access and manage their notes.",
@@ -63,4 +65,4 @@ const projectDetails = [
 	}
 ];
 
-export {navSection, skills, education, projectDetails}
+export { navSection, skills, education, projectDetails }

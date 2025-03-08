@@ -7,7 +7,7 @@ import resume from '../assets/resume.png';
 
 const HeroSection = () => {
 
-	const pdfUrl = '/resume.pdf';
+	const pdfUrl = '/Software_Engineer_Intern.pdf';
 
     return (
 		<div

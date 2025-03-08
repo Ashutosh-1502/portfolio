@@ -16,6 +16,7 @@ const skills = [
 	{ name: "Tailwind CSS", level: "75%" },
 	{ name: "React", level: "75%" },
 	{ name: "React Native", level: '75%' },
+	{name: 'Next.js', level: '40%'},
 	{ name: "Node.js", level: "50%" },
 	{ name: "Express", level: "70%" },
 	{ name: "MongoDB", level: "78%" },

@@ -55,7 +55,8 @@ const projectDetails = [
 		name: "JOB FINDER",
 		info: "A React Native job search app lets users browse and apply for jobs across various domains. With secure Google authentication, users get a personalized experience. The app fetches job listings from the JSearch API, aggregating jobs from platforms like LinkedIn and Internshala. Users can view job details and apply directly via links to company websites.",
 		tech: ['React Native', 'JSearch API'],
-		bgImage: job_banner
+		bgImage: job_banner,
+		githubLink: 'https://github.com/Ashutosh-1502/job_finder.git'
 	},
 	{
 		name: 'NOTE TAKING WEBSITE',
